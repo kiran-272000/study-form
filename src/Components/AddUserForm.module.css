@@ -1,0 +1,43 @@
+.formContainer {
+  width: 50%;
+  background-color: white;
+  margin: auto;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-top: 25px;
+}
+
+.formContainer label {
+  font-weight: bold;
+}
+
+.formElement {
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+}
+
+.formElement input:focus {
+  outline: none;
+  border-color: rgb(65, 3, 65);
+}
+
+.formContainer button {
+  background-color: rgb(65, 3, 65);
+  color: white;
+  padding: 2px 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+  .formContainer {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 512px) {
+  .formContainer {
+    width: 100%;
+    border-radius: 0%;
+  }
+}
